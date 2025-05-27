@@ -12,50 +12,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.5.0</version>  <!-- Versiune vulnerabilă -->
+            <version>2.5.0</version> 
         </dependency>
-
-        <!-- Jackson Databind (RCE Vulnerability) -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.9.9</version>  <!-- CVE-2019-14379 -->
-        </dependency>
-
-        <!-- Apache Struts (RCE Vulnerability) -->
-        <dependency>
-            <groupId>org.apache.struts</groupId>
-            <artifactId>struts2-core</artifactId>
-            <version>2.3.20</version>  <!-- CVE-2017-5638 -->
-        </dependency>
-
-        <!-- Log4j (Log4Shell - CVE-2021-44228) -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>  <!-- Versiune afectată -->
-        </dependency>
-
-        <!-- Hibernate Validator vulnerabil -->
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>6.0.13.Final</version>  <!-- CVE-2020-10693 -->
-        </dependency>
-
-        <!-- Apache Commons Collections (RCE Vulnerability) -->
-        <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>3.2.1</version>  <!-- CVE-2015-7501 -->
-        </dependency>
-
-        <!-- Netty (Denial of Service) -->
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-            <version>4.1.42.Final</version>  <!-- CVE-2019-16869 -->
-        </dependency>
-
     </dependencies>
 </project>
